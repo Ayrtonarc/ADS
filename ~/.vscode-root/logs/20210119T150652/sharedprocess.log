@@ -1,0 +1,2 @@
+[2021-01-19 15:07:02.765] [sharedprocess] [info] main {"machineId":"82da3f5ee2df14255b8f5171d6f85e860f3eb016c366d417ee7e8651ef4a728d","windowId":2}
+[2021-01-19 15:07:02.872] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/proyectos/ADC/restDocker/~/.vscode-root/User/snippets'

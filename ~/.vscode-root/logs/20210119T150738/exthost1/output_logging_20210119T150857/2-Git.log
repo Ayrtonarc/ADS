@@ -1,0 +1,16 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /proyectos/ADC/restDocker
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+fatal: argumento ambiguo 'master': revisión desconocida o ruta fuera del árbol de trabajo.
+Use '--' para separar las rutas de las revisiones, de esta manera:
+'git <comando> [<revisión>...] -- [<archivo>...]'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :src/app.js
+> git ls-files --stage -- /proyectos/ADC/restDocker/src/app.js
+> git check-ignore -v -z --stdin

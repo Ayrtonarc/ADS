@@ -14,3 +14,14 @@ Use '--' para separar las rutas de las revisiones, de esta manera:
 > git show --textconv :src/app.js
 > git ls-files --stage -- /proyectos/ADC/restDocker/src/app.js
 > git check-ignore -v -z --stdin
+> git status -z -u
+> git ls-files --stage -- /proyectos/ADC/restDocker/src/app.js
+> git symbolic-ref --short HEAD
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git show --textconv :src/app.js
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template

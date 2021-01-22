@@ -10,10 +10,11 @@ function pruebas(req, res){
 function saveUser(req, res){
     let params = req.body;
     let user = new User();
+    
 
-    if(params.name && params.surname && params.nick && params.email && params.password){
+    if(params.name != '' && params.surname != '' && params.nick != '' && params.email != '' && params.password != ''){
         
-        user.name = params.name;
+        user.name = params.name.toLowerCase();
         user.surname = params.surname;
         user.nick = params.nick;
         user.email = params.email;
@@ -21,10 +22,13 @@ function saveUser(req, res){
 
         
     }else{
-        return `${this.name}
-                ${this.surname}`
+        res.status(200).send({message: 'Introduzca los datos completos'});
+        
     }
 }
+
+
+
 
 
 module.exports = {
